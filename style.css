@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html ,body {
+    height: 100%;
+    width: 100%;
+    background-color: #C2BAB1;
+    
+}
+
+.nav {
+    height: 100px;
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: canopee;
+    border-bottom: 1px solid #222;
+}
+
+.nav img {
+    height: 30px;
+}
+
+.nav h1 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.card-header {
+    font-family: canopee;
+}
+
+.card-title {
+    font-family: canopee;
+}
