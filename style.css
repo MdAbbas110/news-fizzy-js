@@ -8,7 +8,7 @@ html ,body {
     height: 100%;
     width: 100%;
     background-color: #C2BAB1;
-    
+
 }
 
 .nav {
@@ -20,6 +20,11 @@ html ,body {
     align-items: center;
     font-family: canopee;
     border-bottom: 1px solid #222;
+    background-color: #c8c6c4;
+}
+
+#h {
+    font-size: 1.7rem;
 }
 
 .nav img {
@@ -41,18 +46,86 @@ html ,body {
 
 .item{
     text-decoration: none;
-    font-size: medium;
-    font-size: 1.2rem;
+    font-family: canopee;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.news-input {
+    width: 200px;
+    height: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+    font-family: "Roboto", sans-serif;
+}
+#eye{
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 main {
-    padding-block: 20px;
+    padding-block: 10px;
     margin-top: 80px;
+    margin-left: 25px;
+    margin-right: 25px;
+    
 }
 
 .card-container {
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 20px;
-    align-items: start;
+    gap: 20px; 
+}
+
+.card {
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ece7e1;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+}
+
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.news-source {
+    margin-block: 12px;
+}
+ 
+@media (max-width: 645px)  {
+    #im {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    #ne {
+        display: none;
+    }
+    #h {
+        font-size: 1.2rem;
+    }
+    .list {
+        font-size: 1.2;
+        flex-direction: column;
+        gap: 12px;
+    }
 }
